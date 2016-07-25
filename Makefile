@@ -4,7 +4,7 @@ INCLUDE:=-I./include
 LIB:=-lGL -lGLEW `sdl2-config  --cflags --libs`
 
 build:
-	@g++ ${FLAGS} ${INCLUDE} -o ${APP} *.cpp ${LIB}
+	@g++ ${FLAGS} ${INCLUDE} -o ${APP} *.cpp *.c ${LIB}
 
 run: build
 	@./${APP}
