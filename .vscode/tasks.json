@@ -1,0 +1,23 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "command": "g++",
+            "args": [
+                "-Wall -g",
+                "-I./include -I/usr/include/SDL2 -D_REENTRANT",
+                "-o myTriangle",
+                "*.cpp *.c",
+                "-lGL -lGLEW -L/usr/lib/x86_64-linux-gnu -lSDL2",
+            ],
+        }
+    ]
+}
