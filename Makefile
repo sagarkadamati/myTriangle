@@ -1,5 +1,5 @@
-APP:=mygl
-FLAGS:=-Wall
+APP:=myTriangle
+FLAGS:=-Wall -g
 INCLUDE:=-I./include
 LIB:=-lGL -lGLEW `sdl2-config  --cflags --libs`
 
